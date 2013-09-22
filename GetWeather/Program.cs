@@ -22,9 +22,10 @@ namespace GetWeather
             //dt = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd 00:00:00"));
 
             dt = DateTime.Parse(DateTime.Now.ToString("2013-09-01 00:00:00"));
-
+            Console.WriteLine("开始：");
             while (dt < DateTime.Now)
             {
+                               
                 dt = dt.AddMinutes(30);
 
                 var dynamicFileName = dt.ToString("yyyyMMddhhmm00000");
@@ -34,6 +35,8 @@ namespace GetWeather
                     , dynamicFileName);
 
                 client.DownloadFile(strURI, "F:\\" + dynamicFileName + ".jpg");
+
+                Console.WriteLine("down :" + strURI); 
             }
         }
     }

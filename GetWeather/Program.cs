@@ -33,8 +33,6 @@ namespace GetWeather
                     "http://i.weather.com.cn/i/product/pic/m/sevp_nsmc_wxcl_asc_e99_achn_lno_py_{0}.jpg"
                     , dynamicFileName);
 
-
-
                 client.DownloadFile(strURI, "F:\\" + dynamicFileName + ".jpg");
             }
         }

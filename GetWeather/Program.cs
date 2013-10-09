@@ -37,6 +37,7 @@ namespace GetWeather
                 client.DownloadFile(strURI, "F:\\" + dynamicFileName + ".jpg");
 
                 Console.WriteLine("down :" + strURI); 
+                
             }
         }
     }
